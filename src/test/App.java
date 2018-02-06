@@ -1,7 +1,9 @@
-package controller;
+package test;
 
 
 import java.util.List;
+
+import controller.ProductController;
 import model.Product;
 
 public class App {
