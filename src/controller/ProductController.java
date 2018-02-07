@@ -8,14 +8,14 @@ import javax.persistence.Persistence;
 
 public class ProductController {
 
-public static  List<model.Product> getAllProductInList() {
-	EntityManagerFactory emf = Persistence.createEntityManagerFactory("Product");
-	EntityManager em = emf.createEntityManager();
-	@SuppressWarnings("unchecked")
-	List<model.Product> list = em.createNamedQuery("Product.findAll").getResultList();	
-	em.close();
-	
-	return list;
-	
-}
+	public static List<model.Product> getAllProductInList() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("Product");
+		EntityManager em = emf.createEntityManager();
+		@SuppressWarnings("unchecked")
+		List<model.Product> list = em.createNamedQuery("Product.findAll").getResultList();
+		em.close();
+
+		return list;
+
+	}
 }
