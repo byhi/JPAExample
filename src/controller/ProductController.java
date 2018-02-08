@@ -15,6 +15,7 @@ import org.eclipse.persistence.exceptions.DatabaseException;
 import model.Product;
 import poperties.ProperiesManager;
 
+
 public class ProductController {
 	final static Logger logger = Logger.getLogger(ProductController.class);
 
@@ -80,6 +81,11 @@ public class ProductController {
 			throw new NullPointerException();
 		}
 
+	}
+
+	public static void writeOutProducts(List<Product> allProductInList) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
