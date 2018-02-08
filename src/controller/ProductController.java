@@ -83,9 +83,4 @@ public class ProductController {
 
 	}
 
-	public static void writeOutProducts(List<Product> allProductInList) {
-		// TODO Auto-generated method stub
-		
-	}
-
 }
